@@ -19,18 +19,15 @@ for index, row in df.iterrows():
         year_and_total[year] = amount
 print(year_and_total)
 
-Year = list(year_and_total.keys())
-Amount =  list(year_and_total.values())
-
-print(year_and_total.keys())
+year_axis = list(year_and_total.keys())
+amount_axis =  list(year_and_total.values())
 
 plt.figure(figsize=(10,6))
 plt.xlabel("Year")
 plt.ylabel("Amount")
-plt.bar(Year,Amount, color="magenta")
+plt.bar(year_axis,amount_axis, color='cyan')
 plt.xticks(rotation=45)
 plt.title("By_year")
-
 plt.show()
 
 
