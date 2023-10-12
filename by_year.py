@@ -21,11 +21,12 @@ print(year_and_total)
 
 year_axis = list(year_and_total.keys())
 amount_axis =  list(year_and_total.values())
+colors = np.array(['yellow','blue','indigo','violet'])
 
 plt.figure(figsize=(10,6))
 plt.xlabel("Year")
 plt.ylabel("Amount")
-plt.bar(year_axis,amount_axis, color='cyan')
+plt.bar(year_axis,amount_axis, color=colors)
 plt.xticks(rotation=45)
 plt.title("By_year")
 plt.show()
